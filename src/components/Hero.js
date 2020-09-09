@@ -5,14 +5,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function Hero(props) {
-    console.log("props" , props)
   return (
-    <Jumbotron>
-      <Container>
-        <Row>
-          <Col>
+    <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+      <Container fluid={true}>
+        <Row className="justify-content-center py-5">
+          <Col md={8} sm={12}>
             {props.title && <h1>{props.title}</h1>}
-            {props.isubTitle && <h3>{props.subTitle}</h3>}
+            {props.subTitle && <h3>{props.subTitle}</h3>}
             {props.text && <h3>{props.text}</h3>}
           </Col>
         </Row>
