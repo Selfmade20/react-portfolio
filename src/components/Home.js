@@ -1,12 +1,14 @@
-import React from 'react'
-import Hero from './Hero'
-
+import React from "react";
+import Hero from "./Hero";
+import Carousel from "./Carousel";
+import { Container } from "react-bootstrap";
 function Home(props) {
-    return (
-        <div>
-            <Hero title={props.title} subTitle={props.subTitle} text={props.text}/>
-        </div>
-    )
+  return (
+    <Container>
+      <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
+      <Carousel />
+    </Container>
+  );
 }
 
-export default Home
+export default Home;

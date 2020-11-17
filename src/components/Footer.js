@@ -14,7 +14,7 @@ function Footer() {
                         Tebogo Gift
                     </Col>
                     <Col className='p-0' d-flex justify-content-end md={2}>
-                        This site was made by Tebogo Gift
+                    ©️ Copyright 2020 - Tebogo Gift.
                     </Col>
                 </Row>
             </Container>
